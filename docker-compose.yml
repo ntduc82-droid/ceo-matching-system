@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  matching-app:
+    build: .
+    container_name: ceo-matching-app
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mount file database gốc ra ngoài máy chủ thật (VPS) để đảm bảo KHÔNG BỊ MẤT DỮ LIỆU
+      - ./database_store.json:/app/database_store.json
+    environment:
+      - NODE_ENV=production
+      # - GEMINI_API_KEY=your_gemini_api_key_here # Điền API Key của anh vào đây nếu muốn dùng AI gợi ý
+    restart: always

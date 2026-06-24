@@ -1,0 +1,6 @@
+{
+  "name": "CEO Matching",
+  "description": "Nền tảng kết nối, kết giao kinh doanh cao cấp và matching thông minh dành cho các CEO và nhà quản lý.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

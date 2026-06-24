@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", "Merriweather", Georgia, serif;
+  --font-sans: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Premium Royal Midnight Blue Palette */
+  --color-slate-950: #030712; /* Deepest dark midnight background */
+  --color-slate-900: #0B132B; /* Rich midnight blue for cards and main modules */
+  --color-slate-800: #1C2541; /* Borders and high contrast section container dividers */
+  --color-slate-700: #3A506B; /* Input backgrounds and buttons active state */
+  --color-slate-600: #4B6584; /* Focus outlines and medium tint highlights */
+  --color-slate-500: #778CA3; /* Subtitles and metadata text */
+  --color-slate-400: #A5B1C2; /* Regular body text - highly legible on dark midnight */
+  --color-slate-300: #D1D8E0; /* Soft light text */
+  --color-slate-200: #EDF2F7; /* Bright heading / primary text */
+  --color-slate-100: #F7FAFC; /* White-blue contrast highlight */
+
+  /* Lustrous Metallic Gold Palette */
+  --color-amber-500: #D4AF37; /* Royal Metallic Gold */
+  --color-amber-400: #E6C655; /* Soft glowing gold */
+  --color-amber-300: #F5DD7B; /* Extra light metallic shine */
+  --color-amber-600: #B59124; /* Rich gold dark tone */
+  --color-amber-700: #947313; /* Golden bronze shadow */
+  --color-amber-800: #735606; /* Dark vintage brass */
+  --color-amber-950: #382901; /* Warmest shadow accent */
+
+  /* Mirroring yellow utilities to metallic gold to avoid mismatched yellow highlights */
+  --color-yellow-500: #D4AF37;
+  --color-yellow-400: #E6C655;
+  --color-yellow-300: #F5DD7B;
+  --color-yellow-600: #B59124;
+  --color-yellow-700: #947313;
+  --color-yellow-800: #735606;
+}
+
+/* Custom scrollbars and high fidelity transitions to emulate Bento layouts */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A506B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
